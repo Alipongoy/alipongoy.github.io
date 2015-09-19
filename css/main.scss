@@ -1,5 +1,5 @@
 /* Imports */
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,900italic|Lato:400,900italic|Open+Sans:800);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,900italic|Lato:400,900italic|Open+Sans:300,800);
 
 /* Variables */
 $top-page: 10px 5px;
@@ -79,8 +79,10 @@ img {
 		li {
 			display: block;
 			text-align: center;
-			height: 33.3%;
+			height: 25%;
 			position: relative;
+			border-bottom: 1px solid #000000;
+
 			a {
 				display: block;
 				width: 100%;
@@ -101,10 +103,11 @@ img {
 
 			}
 		}
-		li:nth-child(2) {
-			border-top: 1px solid #000000;
-			border-bottom: 1px solid #000000;
+
+		li:last-child {
+			border-top: none;
 		}
+
 	}
 
 /* Header */
@@ -181,6 +184,10 @@ header {
 
 		li {
 			display: inline-block;
+			border-right: 1px solid #f00;
+			padding-right: 4%;
+			padding-left: calc(4% - 4px);
+
 			a {
 				margin:0;
 				white-space: nowrap;
@@ -192,28 +199,61 @@ header {
 				color: #FFFFFD;
 			}
 		}
-
+		
 		li:first-child {
-			padding-right: calc(5% - 4px);
-
+			padding-left: 0;
 		}
 
 		li:last-child {
-			padding-left: calc(5% - 4px);
-		}
-
-
-		li:nth-child(2) {
-			border-left: 1px solid #f00;
-			border-right: 1px solid #f00;
-			padding: 0 5%;
+			border-right: none;
+			padding-right: 0;
 		}
 	}
 
 
 
 
-// /* About */
+/* About Page */
+.header-about {
+	background: #3A8BBB;
+	color: #fffffd;
+}
+
+	/* About Top */
+	.about-top {
+		width: 100%;
+		padding: 15px 5px 0 15px;
+		text-align: left;
+		font-family: 'Open Sans', serif;
+
+		.name {
+			font-weight: 800;
+			margin: 0;
+			margin-bottom: 8px;
+			word-spacing: 2px;
+		}
+
+		.name-information {
+			margin: 0;
+			font-weight: 300;
+			margin-bottom: 10px;
+			word-spacing: 2px;
+
+		}
+	}
+
+	/* About Content */
+	.about-content {
+		padding-top: 10px;
+		@extend .about-top;
+
+		p {
+			margin: 0;
+			line-height: 1.8em;
+		}
+
+	}
+
 // #about {
 // 	background: #16B4FF;
 // 	color: #fff;
