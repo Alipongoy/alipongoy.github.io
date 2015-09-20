@@ -310,58 +310,50 @@ header {
 			height: 100%;
 			background: url('../img/github_mark.png') no-repeat center center;
 		}
-
 	}
-// #about {
-// 	background: #16B4FF;
-// 	color: #fff;
 
-// 	.about-top {
-// 		@include heading-top();
-// 	}
+/* Projects Page */
 
-// 	.about-content {
-// 		margin-top: 20px;
-// 		font-family: 'Merriweather', serif;
-// 		padding: 5px;
+.header-projects {
+	background: #FFFFDD;
 
-// 		h4 {
-// 			font-weight: bold;
-// 			margin: 0;
-// 		}
+	.header-top h1 {
+		color: #FF0000;
+	}
 
-// 		p {
-// 			line-height: 1.6em;
-// 		}
+	.header-nav li a {
+		color: #FF0000;
+	}
 
-// 		.the-usual {
-// 			background:#000;
-// 			content:"The usual";
-// 		}
-// 	}
-// }
+}
 
-// /* Projects */
-// #projects {
 
-// 	.projects-top {
-// 		@include heading-top();
-// 	}
-// }
 
-// /* Contact */
-// #contact {
 
-// 	.contact-top {
-// 		@include heading-top();
-// 	}
-// }
 
-// /* Footer */
-// footer {
-// 	background: #000;
-// 	color: #fff;
-// 	h5 {
-// 		margin: 0;
-// 	}
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
