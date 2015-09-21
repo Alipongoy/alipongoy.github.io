@@ -122,22 +122,18 @@ header {
 	/* Header top */
 	.header-top {
 		width: 100%;
-		a {	
+		h1 {
 			padding: $top-page;
 			display: inline-block;
 			text-decoration: none;
 			color: white;
 			text-transform: uppercase;
-		}
-
-		h1 {
 			font-weight: 900;
 			font-family: 'Lato', sans-serif;
 			font-size: $top-font;
 			word-spacing: 2px;
 			text-transform: uppercase;
 			margin: 0;
-			padding: 0;
 		}	
 	}
 
@@ -228,8 +224,13 @@ header {
 	.header-nav li:not(:last-child) {
 		border-right: 1px solid #3F48B1;
 	}
+
 }
 
+	/* Sidebar */
+	.sidebar-about .sidebar-nav li {
+		background-color: #3F48B1;
+	}
 
 	/* About Top */
 	.about-top {
@@ -337,6 +338,12 @@ header {
 	.header-top h1 {
 		color: #3A8BBB;
 	}
+
+	/* Sidebar */
+	.sidebar-projects .sidebar-nav li {
+		background-color: #3A8BBB;
+	}
+
 
 	/* Projects Content */
 	.projects-content {

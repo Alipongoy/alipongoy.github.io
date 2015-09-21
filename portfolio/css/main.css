@@ -83,20 +83,18 @@ header {
 /* Header top */
 .header-top {
   width: 100%; }
-  .header-top a {
+  .header-top h1 {
     padding: 10px 5px;
     display: inline-block;
     text-decoration: none;
     color: white;
-    text-transform: uppercase; }
-  .header-top h1 {
+    text-transform: uppercase;
     font-weight: 900;
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     word-spacing: 2px;
     text-transform: uppercase;
-    margin: 0;
-    padding: 0; }
+    margin: 0; }
 
 .header-logo {
   border-bottom: 2px solid #9B0000;
@@ -167,6 +165,10 @@ header {
     border-color: transparent transparent transparent #3F48B1; }
   .header-about .header-nav li:not(:last-child) {
     border-right: 1px solid #3F48B1; }
+
+/* Sidebar */
+.sidebar-about .sidebar-nav li {
+  background-color: #3F48B1; }
 
 /* About Top */
 .about-top, .about-content {
@@ -243,12 +245,15 @@ header {
 .header-projects {
   background: #FFFFFF;
   border-left: 1px solid #3A8BBB;
+  /* Sidebar */
   /* Projects Content */
   /* Header Nav */ }
   .header-projects .header-top .menu-arrow {
     border-color: transparent transparent transparent #3A8BBB; }
   .header-projects .header-top h1 {
     color: #3A8BBB; }
+  .header-projects .sidebar-projects .sidebar-nav li {
+    background-color: #3A8BBB; }
   .header-projects .projects-content {
     list-style-type: none;
     padding: 0;
