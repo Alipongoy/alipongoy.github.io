@@ -47,19 +47,20 @@ $(window).load(function() {
 	$(".sidebar li a, .header-nav li a").click(function(event) {
 		var $a = $(this);
 		event.preventDefault();
-		$("body").fadeOut(300, function() {
+		$("html").fadeOut(300, function() {
 			console.log("fading out");
-			window.location = $a.attr("href");
+			window.location.href = $a.attr("href");
 		});	
+	});
+
+	$("html").fadeIn(750, function() {
+		$("html").removeClass("hidden");
 	});
 });
 
 
 // Runs when document is ready
 $(document).ready(function() {
-	$("body").addClass("hidden");
-	$("body").fadeIn(300, function() {
-		$("body").removeClass("hidden");
-	});
+	$("html").addClass("hidden");
 });
 

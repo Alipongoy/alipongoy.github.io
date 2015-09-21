@@ -2,12 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,900italic|Lato:400,900italic|Open+Sans:300,800);
 /* Variables */
 /* Mixins */
-/* Keyframes */
-@keyframes slide-down {
-  0% {
-    top: 0; }
-  100% {
-    top: 100%; } }
 /* General */
 html {
   height: 100%;
@@ -274,6 +268,8 @@ header {
   border-left: 1px solid #3A8BBB;
   /* Projects Content */
   /* Header Nav */ }
+  .header-projects .header-top {
+    border-bottom: 1.5px solid #001FFF; }
   .header-projects .header-top .menu-arrow {
     border-color: transparent transparent transparent #3A8BBB; }
   .header-projects .header-top h1 {
@@ -292,12 +288,13 @@ header {
     .header-projects .projects-content .overlay {
       background: linear-gradient(rgba(0, 0, 0, 0.8), #3a8bbb);
       position: relative;
-      transition: 400ms all; }
-    .header-projects .projects-content .overlay:after {
       transition: 400ms all;
+      overflow: hidden; }
+    .header-projects .projects-content .overlay:after {
+      transition: 600ms all;
       content: "GIMP Ventures";
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;
+      font-family: 'Merriweather', serif;
+      font-weight: 400;
       opacity: 0;
       width: 100%;
       color: white;
@@ -308,7 +305,7 @@ header {
       transform: translateX(-50%); }
     .header-projects .projects-content .overlay:hover:after {
       font-size: 2.5rem;
-      transition: 400ms all;
+      transition: 600ms all;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -320,7 +317,7 @@ header {
   .header-projects .header-nav li a {
     color: #3A8BBB; }
   .header-projects .header-nav li:not(:last-child) {
-    border-right: 1px solid #3A8BBB; }
+    border-right: 1px solid #001FFF; }
 
 /* Sidebar */
 .sidebar-projects .sidebar-nav li {
