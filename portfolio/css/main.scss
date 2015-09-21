@@ -217,7 +217,19 @@ header {
 .header-about {
 	background: #3A8BBB;
 	color: #fffffd;
+	border-left: 1px solid #3F48B1;
+
+	/* Sidebar Nav */
+	.header-top .menu-arrow {
+		border-color: transparent transparent transparent #3F48B1;
+	}
+	
+	/* Header Nav */
+	.header-nav li:not(:last-child) {
+		border-right: 1px solid #3F48B1;
+	}
 }
+
 
 	/* About Top */
 	.about-top {
@@ -315,16 +327,35 @@ header {
 /* Projects Page */
 
 .header-projects {
-	background: #FFFFDD;
+	background: #FFFFFF;
+	border-left: 1px solid #3A8BBB;
+
+	.header-top .menu-arrow {
+		border-color: transparent transparent transparent #3A8BBB;
+	}
 
 	.header-top h1 {
-		color: #FF0000;
+		color: #3A8BBB;
 	}
 
+	/* Projects Content */
+	.projects-content {
+		list-style-type: none;
+		padding:0;
+		margin: 0;
+		padding: 20px 20px 0 15px;
+
+	}
+
+
+	/* Header Nav */
 	.header-nav li a {
-		color: #FF0000;
+		color: #3A8BBB;
 	}
 
+	.header-nav li:not(:last-child) {
+		border-right: 1px solid #3A8BBB;
+	}
 }
 
 
