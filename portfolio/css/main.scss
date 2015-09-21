@@ -7,15 +7,26 @@ $top-font: 1.5rem;
 
 /* Mixins */
 
-// Intended for h1's
-@mixin heading-top() {
-	font-size: $top-font;
-	padding: $top-page;
-	margin:0;
-	text-align: center;
-	font-weight: 900;
-	font-family: 'Lato', sans-serif;
-	text-transform: uppercase;
+	// Intended for h1's
+	@mixin heading-top() {
+		font-size: $top-font;
+		padding: $top-page;
+		margin:0;
+		text-align: center;
+		font-weight: 900;
+		font-family: 'Lato', sans-serif;
+		text-transform: uppercase;
+	}
+
+/* Keyframes */
+@keyframes slide-down {
+	0% {
+		top: 0;
+	}
+
+	100% {
+		top: 100%;
+	}
 }
 
 /* General */
@@ -64,7 +75,7 @@ img {
 	position: absolute;
 	width: 75%;
 	height: 100%;
-	background: rgba(255,0,0,0.9);
+	background: transparent;
 	filter: blur(5px);
 
 }
@@ -82,6 +93,7 @@ img {
 			height: 33.3%;
 			position: relative;
 			border-bottom: 1px solid #000000;
+			border-right: 1px solid #000000;
 
 			a {
 				display: block;
@@ -110,14 +122,32 @@ img {
 
 	}
 
-/* Header */
+/* Home Header */
 header {
 	background: linear-gradient(hsla(0,0,0,0.5),hsla(0,0,0,0.5)),
-				#F4FF0A url('../img/header_background_image.jpeg') no-repeat center;
+				url('../img/header_background_image.jpeg') no-repeat center;
 	background-size: cover;
 	text-align: center;
 	position: relative;
 }
+	/* Dim class */
+	.dim {
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.8);
+		background-size: cover;
+		opacity: 0;
+
+	}
+
+	/* Sidebar */
+	.sidebar-home .sidebar-nav li {
+		background-color: rgb(255,0,0);
+		opacity: 0.85;
+	}
 
 	/* Header top */
 	.header-top {
@@ -136,9 +166,9 @@ header {
 			margin: 0;
 		}	
 	}
-
+	
+	/* Header logo */
 	.header-logo {
-
 		border-bottom: 2px solid #9B0000;
 		margin:0;
 		padding-bottom:5px;
@@ -213,11 +243,15 @@ header {
 .header-about {
 	background: #3A8BBB;
 	color: #fffffd;
-	border-left: 1px solid #3F48B1;
+	border-left: 1px solid #6A8390;
+
+	.header-top {
+		background: #003F91;
+	}
 
 	/* Sidebar Nav */
 	.header-top .menu-arrow {
-		border-color: transparent transparent transparent #3F48B1;
+		border-color: transparent transparent transparent #6A8390;
 	}
 	
 	/* Header Nav */
@@ -229,7 +263,8 @@ header {
 
 	/* Sidebar */
 	.sidebar-about .sidebar-nav li {
-		background-color: #3F48B1;
+		background-color: #6A8390;
+		opacity: 0.85;
 	}
 
 	/* About Top */
@@ -326,7 +361,6 @@ header {
 	}
 
 /* Projects Page */
-
 .header-projects {
 	background: #FFFFFF;
 	border-left: 1px solid #3A8BBB;
@@ -339,21 +373,62 @@ header {
 		color: #3A8BBB;
 	}
 
-	/* Sidebar */
-	.sidebar-projects .sidebar-nav li {
-		background-color: #3A8BBB;
-	}
-
-
 	/* Projects Content */
 	.projects-content {
 		list-style-type: none;
 		padding:0;
 		margin: 0;
 		padding: 20px 20px 0 15px;
+		position: relative;
+		width: 100%;
+		
+		li a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
 
+		.overlay {
+			background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(58, 139, 187, 1));
+			position: relative;
+			transition:400ms all;
+		}
+
+		.overlay:hover {
+
+		}
+
+		.overlay:after {
+			transition:400ms all;
+			content:"GIMP Ventures";
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 300;
+			opacity: 0;
+			width: 100%;
+			color: white;
+			font-size: 1.5rem;
+			position: absolute;
+			top:-20%;
+			left:50%;
+			transform: translateX(-50%);
+
+		}
+
+		.overlay:hover:after {
+			font-size: 2.5rem;
+			transition:400ms all;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			opacity: 1;
+		}	
+
+		li a img {
+			display: block;
+			opacity: 0.2;
+			z-index: 1;
+		}
 	}
-
 
 	/* Header Nav */
 	.header-nav li a {
@@ -363,7 +438,20 @@ header {
 	.header-nav li:not(:last-child) {
 		border-right: 1px solid #3A8BBB;
 	}
+
 }
+
+	/* Sidebar */
+	.sidebar-projects .sidebar-nav li {
+		background-color: #3A8BBB;
+		opacity: 0.85;
+	}
+
+
+
+
+
+
 
 
 
