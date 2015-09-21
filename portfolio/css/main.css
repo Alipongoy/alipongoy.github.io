@@ -238,11 +238,11 @@ header {
 /* Skill set */
 .skill-set {
   padding: 0;
-  margin: 30px 0;
+  margin: 30px 0 0;
   list-style-type: none; }
   .skill-set h1 {
     text-transform: uppercase;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
     font-family: 'Open Sans', serif;
     font-weight: 800; }
   .skill-set li {
@@ -252,7 +252,9 @@ header {
     margin: 0 5px 5px 0;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid #fff; }
+    border: 1px solid #8AC1E2;
+    color: #fff;
+    background: #5CA4CE; }
 
 /* About Buttons */
 .about-buttons {
