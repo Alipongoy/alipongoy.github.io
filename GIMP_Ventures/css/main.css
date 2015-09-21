@@ -29,6 +29,13 @@ img {
 
 /* Variables */
 /* Keyframes */
+@-webkit-keyframes slide-right {
+  0% {
+    width: 0%; }
+  50% {
+    width: 100%; }
+  100% {
+    width: 100%; } }
 @keyframes slide-right {
   0% {
     width: 0%; }
@@ -36,6 +43,11 @@ img {
     width: 100%; }
   100% {
     width: 100%; } }
+@-webkit-keyframes slide-left {
+  from {
+    width: 100%; }
+  to {
+    width: 0%; } }
 @keyframes slide-left {
   from {
     width: 100%; }
@@ -145,7 +157,8 @@ header {
     overflow: hidden;
     text-wrap: none;
     padding-left: 10px;
-    animation: slide-right 5s ease infinite alternate, slide-right 5s ease infinite alternate; }
+    -webkit-animation: slide-right 5s ease infinite alternate, slide-right 5s ease infinite alternate;
+            animation: slide-right 5s ease infinite alternate, slide-right 5s ease infinite alternate; }
   #about p {
     font-size: 1.3rem;
     margin: 0;
@@ -226,7 +239,8 @@ header {
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -40%); }
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%); }
 
 /* Footer */
 footer {
@@ -332,8 +346,10 @@ footer {
       margin-top: 5%;
       width: 100%; }
     #about h1 {
-      animation: none;
-      animation-name: none;
+      -webkit-animation: none;
+              animation: none;
+      -webkit-animation-name: none;
+              animation-name: none;
       font-size: 2rem;
       padding-right: 5px;
       width: auto;
@@ -356,7 +372,8 @@ footer {
   .lightbox-content {
     top: 30%;
     left: 50%;
-    transform: translate(-50%, -30%); } }
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%); } }
 @media (max-width: 870px) {
   .left-side {
     margin-left: 13%; }
@@ -394,12 +411,11 @@ footer {
   .lightbox-content {
     top: 14%;
     left: 50%;
-    transform: translate(-50%, -14%); } }
+    -webkit-transform: translate(-50%, -14%);
+            transform: translate(-50%, -14%); } }
 @media (max-width: 530px) {
   #contact .contact-content {
     margin-top: 34%; } }
 @media (max-width: 430px) {
   #contact .contact-content h1 {
     font-size: 1.8rem; } }
-
-/*# sourceMappingURL=main.css.map */

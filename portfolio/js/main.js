@@ -11,6 +11,7 @@ $(window).load(function() {
 		console.log("menu arrow is clicked");
 		$("body").append($pageOverlay);
 		$pageOverlay.css("opacity", "0");
+		$("header").toggleClass("blur");
 		$pageOverlay.animate({
 			opacity: 1
 		},{
@@ -34,6 +35,7 @@ $(window).load(function() {
 		$pageOverlay.click(function() {
 			console.log("header is clicked");
 			console.log($(".sidebar").hasClass("hidden"));
+			$("header").removeClass("blur");
 			if ($(".sidebar").hasClass("hidden") === false) {
 				$(".sidebar").css("display", "none");
 				$(".sidebar").addClass("hidden");

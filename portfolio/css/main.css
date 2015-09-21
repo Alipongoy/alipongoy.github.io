@@ -1,5 +1,5 @@
 /* Imports */
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,900italic|Lato:400,900italic|Open+Sans:300,800);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,900italic|Lato:400,900italic|Open+Sans:300,500,800);
 /* Variables */
 /* Mixins */
 /* General */
@@ -74,12 +74,17 @@ img {
   .sidebar-nav li:last-child {
     border-top: none; }
 
+/* Blur class */
+.blur {
+  -webkit-filter: blur(2px); }
+
 /* Home Header */
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/header_background_image.jpeg") no-repeat center;
   background-size: cover;
   text-align: center;
-  position: relative; }
+  position: relative;
+  transition: -webkit-filter 50ms linear; }
 
 /* Dim class */
 .dim {
@@ -96,6 +101,13 @@ header {
 .sidebar-home .sidebar-nav li {
   background-color: red;
   opacity: 0.85; }
+
+.sidebar .sidebar-nav li a {
+  transition: 0.4s all; }
+
+.sidebar .sidebar-nav li a:hover {
+  transition: 0.25s all;
+  color: #fff; }
 
 /* Header top */
 .header-top {
@@ -191,18 +203,24 @@ header {
   background-color: #6A8390;
   opacity: 0.85; }
 
-/* About Top */
-.about-top, .about-content {
+/* About Wrapper */
+.about-wrapper {
   width: 100%;
-  padding: 20px 20px 0 15px;
+  padding: 0 20px 0 15px;
+  text-align: left; }
+
+/* About Top */
+.about-top {
+  width: 100%;
+  padding-top: 20px;
   text-align: left;
   font-family: 'Open Sans', serif; }
-  .about-top .name, .about-content .name {
+  .about-top .name {
     font-weight: 800;
     margin: 0;
     margin-bottom: 8px;
     word-spacing: 2px; }
-  .about-top .name-information, .about-content .name-information {
+  .about-top .name-information {
     margin: 0;
     font-weight: 300;
     margin-bottom: 5px;
@@ -212,13 +230,35 @@ header {
 .about-content {
   padding-top: 10px; }
   .about-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
     margin: 0;
     line-height: 1.8em; }
+
+/* Skill set */
+.skill-set {
+  padding: 0;
+  margin: 30px 0;
+  list-style-type: none; }
+  .skill-set h1 {
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    font-family: 'Open Sans', serif;
+    font-weight: 800; }
+  .skill-set li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #fff; }
 
 /* About Buttons */
 .about-buttons {
   list-style-type: none;
-  padding: 25px 20px 0 15px;
+  padding-top: 25px;
+  padding-left: 0;
   margin: 0;
   width: 100%; }
   .about-buttons li {

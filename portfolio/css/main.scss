@@ -1,5 +1,5 @@
 /* Imports */
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,900italic|Lato:400,900italic|Open+Sans:300,800);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,900italic|Lato:400,900italic|Open+Sans:300,500,800);
 
 /* Variables */
 $top-page: 10px 5px;
@@ -58,6 +58,7 @@ img {
 		width: calc(100% + 1px);
 	}
 
+
 /* Sidebar */
 .sidebar {
 	z-index: 10;
@@ -111,6 +112,13 @@ img {
 
 	}
 
+	/* Blur class */
+	.blur {
+		-webkit-filter: blur(2px);
+
+	}
+
+
 /* Home Header */
 header {
 	background: linear-gradient(hsla(0,0,0,0.5),hsla(0,0,0,0.5)),
@@ -118,6 +126,8 @@ header {
 	background-size: cover;
 	text-align: center;
 	position: relative;
+	transition:-webkit-filter 50ms linear;
+
 }
 	/* Dim class */
 	.dim {
@@ -129,13 +139,22 @@ header {
 		background: rgba(0,0,0,0.8);
 		background-size: cover;
 		opacity: 0;
-
 	}
 
 	/* Sidebar */
 	.sidebar-home .sidebar-nav li {
 		background-color: rgb(255,0,0);
 		opacity: 0.85;
+
+	}
+	
+	.sidebar .sidebar-nav li a {
+		transition: 0.4s all;
+	}
+
+	.sidebar .sidebar-nav li a:hover {
+		transition: 0.25s all;
+		color: #fff;
 	}
 
 	/* Header top */
@@ -256,10 +275,17 @@ header {
 		opacity: 0.85;
 	}
 
+	/* About Wrapper */
+	.about-wrapper {
+		width: 100%;
+		padding: 0 20px 0 15px;
+		text-align: left;
+	}
+
 	/* About Top */
 	.about-top {
 		width: 100%;
-		padding: 20px 20px 0 15px;
+		padding-top: 20px;
 		text-align: left;
 		font-family: 'Open Sans', serif;
 
@@ -282,18 +308,44 @@ header {
 	/* About Content */
 	.about-content {
 		padding-top: 10px;
-		@extend .about-top;
 
 		p {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 500;
 			margin: 0;
 			line-height: 1.8em;
+		}
+	}
+
+	/* Skill set */
+	.skill-set {
+		padding: 0;
+		margin: 30px 0;
+		list-style-type: none;
+		
+		h1 {
+			text-transform: uppercase;
+			margin: 0 0 10px 0;
+			font-family: 'Open Sans', serif;
+			font-weight: 800;
+		}
+
+		li {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 500;
+			display: inline-block;
+			margin: 0 5px 5px 0;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #fff;
 		}
 	}
 
 	/* About Buttons */
 	.about-buttons {
 		list-style-type: none;
-		padding:25px 20px 0 15px;
+		padding-top: 25px;
+		padding-left: 0;
 		margin: 0;
 		width: 100%;
 		li {
