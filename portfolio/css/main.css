@@ -30,7 +30,7 @@ img {
 /* Page class */
 .page {
   border-left: 1px solid red;
-  height: 100%;
+  min-height: 100%;
   width: calc(100% + 1px); }
 
 /* Sidebar */
@@ -215,7 +215,8 @@ header {
   width: 100%;
   padding-top: 20px;
   text-align: left;
-  font-family: 'Open Sans', serif; }
+  font-family: 'Open Sans', serif;
+  text-align: center; }
   .about-top .name {
     font-weight: 800;
     margin: 0;
@@ -226,6 +227,15 @@ header {
     font-weight: 300;
     margin-bottom: 5px;
     word-spacing: 2px; }
+
+/* About Image */
+.about-image {
+  text-align: center; }
+
+.about-image img {
+  margin-top: 15px;
+  width: 200px;
+  border-radius: 100px; }
 
 /* About Content */
 .about-content {
@@ -250,7 +260,7 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     display: inline-block;
-    margin: 0 5px 5px 0;
+    margin: 0 5px 10px 0;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #8AC1E2;
@@ -260,9 +270,9 @@ header {
 /* About Buttons */
 .about-buttons {
   list-style-type: none;
-  padding-top: 25px;
+  padding-top: 15px;
   padding-left: 0;
-  margin: 0;
+  margin: 0 0 55px;
   width: 100%; }
   .about-buttons li {
     display: block;
@@ -389,13 +399,34 @@ header {
   .projects-content li {
     max-width: 640px;
     margin: 0 auto; } }
+@media (min-width: 700px) {
+  /* About buttons */
+  .about-buttons li {
+    display: inline-block;
+    width: 49.5%; }
+
+  /* Github and email fix */
+  .about-buttons .email {
+    float: left; }
+  .about-buttons .github {
+    float: right; } }
 @media (min-width: 740px) {
   /* Sidebar Nav */
   .sidebar {
     width: 50%; } }
+@media (min-width: 980px) {
+  /* About Wrapper */
+  .about-wrapper {
+    width: 90%;
+    margin: 0 auto; } }
 @media (min-width: 1040px) {
   /* Sidebar Nav */
   .sidebar {
-    max-width: 538px; } }
+    max-width: 538px; }
+
+  /* About Wrapper */
+  .about-wrapper {
+    max-width: 80%;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=main.css.map */
