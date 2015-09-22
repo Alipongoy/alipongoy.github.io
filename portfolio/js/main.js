@@ -15,7 +15,7 @@ $(window).load(function() {
 		$pageOverlay.animate({
 			opacity: 1
 		},{
-			duration: 300,
+			duration: 350,
 			queue: false,
 			complete: function() {
 				console.log("page overlay has completed");
@@ -24,7 +24,7 @@ $(window).load(function() {
 		$(".sidebar").animate({
 			width: "toggle"
 		}, {
-			duration: 300,
+			duration: 350,
 			queue: false,
 			complete: function() {
 				$(".sidebar").removeClass("hidden");
@@ -55,7 +55,7 @@ $(window).load(function() {
 		});	
 	});
 
-	$("body").fadeIn(750, "linear", function() {
+	$("body").fadeIn(700, "linear", function() {
 		$("body").removeClass("hidden");
 	});
 });
