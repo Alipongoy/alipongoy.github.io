@@ -224,6 +224,8 @@ header {
   font-family: 'Open Sans', serif;
   text-align: center; }
   .about-top .name {
+    display: inline-block;
+    white-space: nowrap;
     font-weight: 800;
     margin: 0;
     margin-bottom: 8px;
@@ -241,7 +243,7 @@ header {
 .about-image img {
   margin-top: 15px;
   width: 200px;
-  border-radius: 100px; }
+  border-radius: 200px; }
 
 /* About Content */
 .about-content {
