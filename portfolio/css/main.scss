@@ -241,6 +241,10 @@ header {
 				transition: 0.25s all;
 				color: #B0B0B0;
 			}
+
+			a.selected {
+				color: #B0B0B0;
+			}
 		}
 
 
@@ -505,6 +509,10 @@ header {
 	.header-nav li a:hover {
 		transition: 0.25s all;
 		color: #0A2A8B;
+	}
+
+	.header-nav li a.selected {
+			color: #0A2A8B;
 	}
 
 	.header-nav li:not(:last-child) {

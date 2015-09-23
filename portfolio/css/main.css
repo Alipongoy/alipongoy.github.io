@@ -183,6 +183,8 @@ header {
     .header-nav li a:hover {
       transition: 0.25s all;
       color: #B0B0B0; }
+    .header-nav li a.selected {
+      color: #B0B0B0; }
   .header-nav li:first-child {
     padding-left: 0; }
   .header-nav li:last-child {
@@ -375,6 +377,8 @@ header {
     color: #3A8BBB; }
   .header-projects .header-nav li a:hover {
     transition: 0.25s all;
+    color: #0A2A8B; }
+  .header-projects .header-nav li a.selected {
     color: #0A2A8B; }
   .header-projects .header-nav li:not(:last-child) {
     border-right: 1px solid #001FFF; }
