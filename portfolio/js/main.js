@@ -71,6 +71,6 @@ $(window).load(function() {
 
 // Runs when document is ready
 $(document).ready(function() {
-
+	$("body").addClass('hidden');
 });
 
