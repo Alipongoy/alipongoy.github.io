@@ -15,7 +15,7 @@ $(window).load(function() {
 		$pageOverlay.animate({
 			opacity: 1
 		},{
-			duration: 350,
+			duration: 500,
 			queue: false,
 			complete: function() {
 				console.log("page overlay has completed");
@@ -24,7 +24,7 @@ $(window).load(function() {
 		$(".sidebar").animate({
 			width: "toggle"
 		}, {
-			duration: 350,
+			duration: 500,
 			queue: false,
 			complete: function() {
 				$(".sidebar").removeClass("hidden");
