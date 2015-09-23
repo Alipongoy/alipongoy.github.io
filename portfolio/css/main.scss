@@ -161,6 +161,7 @@ header {
 	/* Header top */
 	.header-top {
 		width: 100%;
+
 		h1 {
 			padding: $top-page;
 			display: inline-block;
@@ -192,6 +193,7 @@ header {
 		left:50%;
 		transform: translate(-50%, -45%);
 	}
+
 	/* Menu Arrow */
 	.menu-arrow {
 		cursor: pointer;
@@ -232,9 +234,16 @@ header {
 				font-weight: 800;
 				text-decoration: none;
 				color: #FFFFFD;
+				transition: 0.25s all;
+			}
+
+			a:hover {
+				transition: 0.25s all;
+				color: #B0B0B0;
 			}
 		}
-		
+
+
 		li:first-child {
 			padding-left: 0;
 		}
@@ -493,9 +502,16 @@ header {
 		color: #3A8BBB;
 	}
 
+	.header-nav li a:hover {
+		transition: 0.25s all;
+		color: #0A2A8B;
+	}
+
 	.header-nav li:not(:last-child) {
 		border-right: 1px solid #001FFF;
 	}
+
+
 
 }
 
@@ -592,7 +608,7 @@ header {
 
 	/* Sidebar Nav */
 	.sidebar {
-		max-width: 538px;
+		max-width: 450px;
 	}
 	
 	/* About Wrapper */

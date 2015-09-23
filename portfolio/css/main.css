@@ -178,7 +178,11 @@ header {
       font-family: 'Open Sans', sans-serif;
       font-weight: 800;
       text-decoration: none;
-      color: #FFFFFD; }
+      color: #FFFFFD;
+      transition: 0.25s all; }
+    .header-nav li a:hover {
+      transition: 0.25s all;
+      color: #B0B0B0; }
   .header-nav li:first-child {
     padding-left: 0; }
   .header-nav li:last-child {
@@ -369,6 +373,9 @@ header {
       z-index: 1; }
   .header-projects .header-nav li a {
     color: #3A8BBB; }
+  .header-projects .header-nav li a:hover {
+    transition: 0.25s all;
+    color: #0A2A8B; }
   .header-projects .header-nav li:not(:last-child) {
     border-right: 1px solid #001FFF; }
 
@@ -422,7 +429,7 @@ header {
 @media (min-width: 1040px) {
   /* Sidebar Nav */
   .sidebar {
-    max-width: 538px; }
+    max-width: 450px; }
 
   /* About Wrapper */
   .about-wrapper {
