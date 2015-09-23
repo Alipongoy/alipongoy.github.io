@@ -42,8 +42,16 @@ $(window).load(function() {
 				$pageOverlay.remove();
 			}
 		});
-
 	});
+
+		// Unselects selected class when hovered over
+		var $headerSelected = $(".header-nav li a.selected");
+		$(".header-nav li a").hover(function() {
+			$(".header-nav li a").removeClass("selected");
+		}, function() {
+			$headerSelected.addClass("selected");
+		});
+
 
 	// Fades page in and out
 	$(".sidebar li a, .header-nav li a").click(function(event) {
