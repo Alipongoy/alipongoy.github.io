@@ -1,0 +1,113 @@
+/* General */
+html {
+	height: 100%;
+}
+
+body {
+	max-width: 500px;
+	margin: 100px auto;
+	background: #64B1F8;
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*:before, *:after {
+	box-sizing: inherit;
+}
+
+/* Variables */
+$bgcolor : #E6E6E6;
+
+/* Form */
+form {
+	text-align: center;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background: $bgcolor;
+	
+	h1 {
+		margin: 10px 0;
+	}
+
+	h1:first-child {
+		margin-top: 29px;
+	}
+
+	
+	input[type="text"] {
+		font-size: 1.3em;
+		width: 80%;
+		margin: 0 auto;
+		height: 75px;
+		border-radius: 60px;
+		border: none;
+		text-align: center;
+	}
+
+	input[type="text"]:focus {
+		border-radius: 60px;
+		outline: none;
+		border: 2px solid #0851FF;
+	}
+
+	input[name="lastname"] {
+		margin-bottom: 30px;
+	}
+
+	input[name="wordcount"] {
+		text-align: center;
+		font-size: 1.3em;
+		margin-bottom: 30px;
+	}
+
+	input[type="submit"] {
+		border-radius: 60px;
+		display: block;
+		font-size: 1.3em;
+		width: 80%;
+		height: 75px;
+		background: #1C1C1C;
+		color: white;
+		outline: none;
+		border: 1px solid #DCDCDC;
+		margin: 0 auto 29px;
+	}
+
+	input[type="submit"]:hover {
+		border: 2px solid #ff001f;
+	}
+
+}
+
+/* Body Wrapper */
+.body-wrapper {
+	width: 100%;
+	@extend form;
+	h1 {
+		margin-bottom: 30px;	
+	}
+
+	.back {
+		font-size: 1.3em;
+		vertical-align: center;
+		width: 80%;
+		margin: 0 auto;
+		height: 60px;
+		line-height: 60px;
+		border-radius: 60px;
+		text-decoration: none;
+		background: #ff0000;
+		color: #1C1C1C;
+		display: block;
+		margin-bottom: 30px;
+		border: 1px solid #9E9E9E;
+	}
+
+	.back:hover {
+		border: 2px solid #000;
+	}
+}
+
