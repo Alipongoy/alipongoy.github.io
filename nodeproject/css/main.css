@@ -20,7 +20,9 @@ form, .body-wrapper {
   text-align: center;
   padding-top: 1px;
   padding-bottom: 1px;
-  background: #E6E6E6; }
+  background: #E4E4E4;
+  border-radius: 5px;
+  border: 1px solid #C6C6C6; }
   form h1, .body-wrapper h1 {
     margin: 10px 0; }
   form h1:first-child, .body-wrapper h1:first-child {

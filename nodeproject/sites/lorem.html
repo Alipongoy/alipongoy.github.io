@@ -3,8 +3,91 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lorem Boys</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main.css">
+	<style>
+	/* General */
+	html {
+	  height: 100%; }
+
+	body {
+	  font-family: 'Helvetica', sans-serif;
+	  max-width: 500px;
+	  margin: 100px auto;
+	  background: #64B1F8;
+	  text-align: center; }
+
+	* {
+	  box-sizing: border-box; }
+
+	*:before, *:after {
+	  box-sizing: inherit; }
+
+	/* Variables */
+	/* Form */
+	form, .body-wrapper {
+	  text-align: center;
+	  padding-top: 1px;
+	  padding-bottom: 1px;
+	  background: #E4E4E4;
+	  border-radius: 5px;
+	  border: 1px solid #C6C6C6; }
+	  form h1, .body-wrapper h1 {
+	    margin: 10px 0; }
+	  form h1:first-child, .body-wrapper h1:first-child {
+	    margin-top: 29px; }
+	  form input[type="text"], .body-wrapper input[type="text"] {
+	    font-size: 1.3em;
+	    width: 80%;
+	    margin: 0 auto;
+	    height: 75px;
+	    border-radius: 60px;
+	    border: none;
+	    text-align: center; }
+	  form input[type="text"]:focus, .body-wrapper input[type="text"]:focus {
+	    border-radius: 60px;
+	    outline: none;
+	    border: 2px solid #0851FF; }
+	  form input[name="lastname"], .body-wrapper input[name="lastname"] {
+	    margin-bottom: 30px; }
+	  form input[name="wordcount"], .body-wrapper input[name="wordcount"] {
+	    text-align: center;
+	    font-size: 1.3em;
+	    margin-bottom: 30px; }
+	  form input[type="submit"], .body-wrapper input[type="submit"] {
+	    border-radius: 60px;
+	    display: block;
+	    font-size: 1.3em;
+	    width: 80%;
+	    height: 75px;
+	    background: #1C1C1C;
+	    color: white;
+	    outline: none;
+	    border: 1px solid #DCDCDC;
+	    margin: 0 auto 29px; }
+	  form input[type="submit"]:hover, .body-wrapper input[type="submit"]:hover {
+	    border: 2px solid #ff001f; }
+
+	/* Body Wrapper */
+	.body-wrapper {
+	  width: 100%; }
+	  .body-wrapper h1 {
+	    margin-bottom: 30px; }
+	  .body-wrapper .back {
+	    font-size: 1.3em;
+	    vertical-align: center;
+	    width: 80%;
+	    margin: 0 auto;
+	    height: 60px;
+	    line-height: 60px;
+	    border-radius: 60px;
+	    text-decoration: none;
+	    background: #ff0000;
+	    color: #1C1C1C;
+	    display: block;
+	    margin-bottom: 30px;
+	    border: 1px solid #9E9E9E; }
+	  .body-wrapper .back:hover {
+	    border: 2px solid #000; }
+	</style>
 </head>
 <body>
 	<div class="body-wrapper">
@@ -12,7 +95,7 @@
 		<h1 class="firstname-value">{{firstname}}</h1>
 		<h1 class="lastname">Last Name</h1>
 		<h1 class="lastname-value">{{lastname}}</h1>
-		<a class="back" href="index.html">One more time?</a>
+		<a class="back" href="./">One more time?</a>
 	</div>
 </body>
 </html>

@@ -19,7 +19,7 @@ body {
 }
 
 /* Variables */
-$bgcolor : #E6E6E6;
+$bgcolor : #E4E4E4;
 
 /* Form */
 form {
@@ -27,6 +27,8 @@ form {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	background: $bgcolor;
+	border-radius: 5px;
+	border: 1px solid #C6C6C6;
 	
 	h1 {
 		margin: 10px 0;
