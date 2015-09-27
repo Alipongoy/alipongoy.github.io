@@ -71,6 +71,16 @@
 	  width: 100%; }
 	  .body-wrapper h1 {
 	    margin-bottom: 30px; }
+	  .body-wrapper .name-value {
+	    font-size: 2rem;
+	    width: 80%;
+	    margin: 0 auto;
+	    height: 75px;
+	    line-height: 75px;
+	    border-radius: 60px;
+	    border: none;
+	    text-align: center;
+	    margin-bottom: 30px; }
 	  .body-wrapper .back {
 	    font-size: 1.3em;
 	    vertical-align: center;
@@ -87,15 +97,17 @@
 	    border: 1px solid #9E9E9E; }
 	  .body-wrapper .back:hover {
 	    border: 2px solid #000; }
+
+	/*# sourceMappingURL=main.css.map */
 	</style>
 </head>
 <body>
 	<div class="body-wrapper">
 		<h1 class="firstname">First Name</h1>
-		<h1 class="firstname-value">{{firstname}}</h1>
+		<h1 class="name-value">{{firstname}}</h1>
 		<h1 class="lastname">Last Name</h1>
-		<h1 class="lastname-value">{{lastname}}</h1>
-		<a class="back" href="./">One more time?</a>
+		<h1 class="name-value">{{lastname}}</h1>
+		<a class="back" href="index.html">One more time?</a>
 	</div>
 </body>
 </html>

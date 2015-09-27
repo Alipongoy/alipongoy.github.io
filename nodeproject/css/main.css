@@ -63,10 +63,14 @@ form, .body-wrapper {
 .body-wrapper {
   width: 100%; }
   .body-wrapper h1 {
-    font-size: 1.3em;
+    margin-bottom: 30px; }
+  .body-wrapper .name-value {
+    background: #fff;
+    font-size: 2rem;
     width: 80%;
     margin: 0 auto;
     height: 75px;
+    line-height: 75px;
     border-radius: 60px;
     border: none;
     text-align: center;
