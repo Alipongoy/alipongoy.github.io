@@ -38,8 +38,7 @@ img {
   width: 75%;
   height: 100%;
   background: transparent;
-  -webkit-filter: blur(5px);
-          filter: blur(5px); }
+  filter: blur(5px); }
 
 /* Sidebar nav */
 .sidebar-nav {
@@ -64,8 +63,7 @@ img {
       position: absolute;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       margin: 0;
       font-size: 2.2em;
       text-transform: uppercase;
@@ -140,8 +138,7 @@ header {
   font-size: 2.2em;
   word-spacing: 2px;
   left: 50%;
-  -webkit-transform: translate(-50%, -45%);
-          transform: translate(-50%, -45%); }
+  transform: translate(-50%, -45%); }
 
 /* Menu Arrow */
 .menu-arrow {
@@ -161,8 +158,7 @@ header {
   position: absolute;
   bottom: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   list-style-type: none;
   padding: 0;
   text-align: center;
@@ -294,8 +290,7 @@ header {
       position: absolute;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       display: block;
       width: 100%;
       height: 100%;
@@ -313,8 +308,7 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     display: block;
     width: 100%;
     height: 100%;
@@ -326,8 +320,7 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     display: block;
     width: 100%;
     height: 100%;
@@ -373,8 +366,7 @@ header {
       position: absolute;
       top: -20%;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); }
+      transform: translateX(-50%); }
     .header-projects .projects-content .overlay:hover {
       transition: 600ms all;
       background: linear-gradient(black, #3a8bbb); }
@@ -383,8 +375,7 @@ header {
       transition: 600ms all;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       opacity: 1; }
     .header-projects .projects-content li a img {
       display: block;
@@ -456,3 +447,5 @@ header {
   .about-wrapper {
     max-width: 80%;
     margin: 0 auto; } }
+
+/*# sourceMappingURL=main.css.map */
