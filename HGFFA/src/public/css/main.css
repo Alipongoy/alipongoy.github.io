@@ -1,0 +1,116 @@
+/* General */
+html, body {
+  height: 100%;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+img {
+  max-width: 100%; }
+
+/* Hidden */
+.hidden {
+  display: none; }
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+/* Mixins */
+/* Variables */
+/* Page Defaults */
+.page {
+  width: 100%;
+  padding: 5px; }
+
+/* Header Page */
+#header {
+  height: 100%;
+  background: url("../img/header_background.jpg") no-repeat fixed;
+  background-size: cover; }
+
+/* Header Top */
+.header-top {
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px 0 0;
+  background: black;
+  color: #fff; }
+
+/* Header Container */
+.header-top-container {
+  min-height: 45px;
+  position: relative; }
+
+/* Header Logo */
+.header-logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4%;
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 1.9em; }
+
+/* Navicon */
+.fa-bars {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2%;
+  font-size: 1.9em;
+  cursor: pointer; }
+
+/* Header Nav */
+.header-nav, #footer .footer-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  .header-nav li, #footer .footer-nav li {
+    display: block;
+    text-align: center; }
+    .header-nav li a, #footer .footer-nav li a {
+      display: block;
+      padding: 10px 0;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.9em; }
+
+/* Content Page */
+#content {
+  text-align: center;
+  background: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #000; }
+  #content h1 {
+    color: #0036FF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    margin: 0.5em 0 0.3em; }
+  #content p {
+    margin-top: 0;
+    line-height: 2em; }
+
+/* Footer Page */
+#footer {
+  background: #1F1ABD;
+  /* Footer Nav */ }
+  #footer .footer-nav {
+    text-align: center; }
+    #footer .footer-nav li {
+      display: inline-block;
+      margin: 0 15px 0 0; }
+      #footer .footer-nav li a {
+        color: #fff;
+        font-size: 1.1em; }
+
+/*# sourceMappingURL=main.css.map */
