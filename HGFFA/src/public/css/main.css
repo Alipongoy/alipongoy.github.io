@@ -9,6 +9,12 @@ html, body {
 img {
   max-width: 100%; }
 
+h1 {
+  font-family: 'Open Sans', sans-serif; }
+
+p {
+  font-family: 'Source Sans Pro', sans-serif; }
+
 /* Hidden */
 .hidden {
   display: none; }
@@ -41,7 +47,7 @@ img {
 /* Header Top */
 .header-top {
   font-family: 'Open Sans', sans-serif;
-  padding: 5px 0 0;
+  padding: 0;
   background: black;
   color: #fff; }
 
@@ -59,15 +65,15 @@ img {
   display: inline-block;
   margin: 0;
   white-space: nowrap;
-  font-size: 1.9em; }
+  font-size: 2.1em; }
 
 /* Navicon */
 .fa-bars {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 2%;
-  font-size: 1.9em;
+  right: 4%;
+  font-size: 2.1em;
   cursor: pointer; }
 
 /* Header Nav */
@@ -83,7 +89,7 @@ img {
       padding: 10px 0;
       text-decoration: none;
       color: #fff;
-      font-size: 1.9em; }
+      font-size: 1.5em; }
 
 /* Content Page */
 #content {
@@ -95,10 +101,35 @@ img {
     color: #0036FF;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3em;
+    line-height: 1.5em;
     margin: 0.5em 0 0.3em; }
   #content p {
     margin-top: 0;
     line-height: 2em; }
+
+/* Pastor Page */
+#pastor {
+  height: 100%;
+  background: url("../img/pastor_background.jpg") no-repeat fixed;
+  background-size: contain; }
+
+/* Location Page */
+#location {
+  background: #f0f; }
+  #location .location-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    #location .location-container li {
+      text-align: center;
+      margin: 1em; }
+      #location .location-container li i {
+        color: #fff;
+        font-size: 1.5em; }
+      #location .location-container li p {
+        color: #fff;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0.5em; }
 
 /* Footer Page */
 #footer {
