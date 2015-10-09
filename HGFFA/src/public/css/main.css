@@ -1,3 +1,5 @@
+/* Imports (bad practice I know) */
+@import url(../fonts/besom/stylesheet.css);
 /* General */
 html, body {
   height: 100%;
@@ -14,6 +16,9 @@ h1 {
 
 p {
   font-family: 'Source Sans Pro', sans-serif; }
+
+a {
+  font-family: 'Open Sans', sans-serif; }
 
 /* Hidden */
 .hidden {
@@ -36,25 +41,28 @@ p {
 /* Page Defaults */
 .page {
   width: 100%;
-  padding: 5px; }
+  padding: 5px 15px; }
 
 /* Header Page */
 #header {
   height: 100%;
-  background: url("../img/header_background.jpg") no-repeat fixed;
+  background: linear-gradient(#2213ec, rgba(0, 255, 255, 0.5)), url("../img/haeder_background2.jpg") no-repeat fixed center;
   background-size: cover; }
 
 /* Header Top */
 .header-top {
   font-family: 'Open Sans', sans-serif;
-  padding: 0;
-  background: black;
+  padding: 10px;
+  background: transparent;
   color: #fff; }
 
 /* Header Container */
 .header-top-container {
   min-height: 45px;
-  position: relative; }
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
 
 /* Header Logo */
 .header-logo {
@@ -65,7 +73,7 @@ p {
   display: inline-block;
   margin: 0;
   white-space: nowrap;
-  font-size: 2.1em; }
+  font-size: 1.9em; }
 
 /* Navicon */
 .fa-bars {
@@ -73,49 +81,63 @@ p {
   top: 50%;
   transform: translateY(-50%);
   right: 4%;
-  font-size: 2.1em;
+  font-size: 1.9em;
   cursor: pointer; }
 
 /* Header Nav */
-.header-nav, #footer .footer-nav {
+.header-nav {
   list-style-type: none;
   padding: 0;
-  margin: 0; }
-  .header-nav li, #footer .footer-nav li {
+  margin: 0;
+  z-index: 2;
+  background: #000; }
+  .header-nav li {
     display: block;
     text-align: center; }
-    .header-nav li a, #footer .footer-nav li a {
+    .header-nav li a {
       display: block;
       padding: 10px 0;
       text-decoration: none;
       color: #fff;
       font-size: 1.5em; }
 
+/* Header Hero */
+.header-hero {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  color: #fff;
+  font-family: 'besom_2regular', sans-serif;
+  font-size: 3.3em; }
+
 /* Content Page */
-#content {
+#welcome {
   text-align: center;
   background: #fff;
   font-family: "Source Sans Pro", sans-serif;
   color: #000; }
-  #content h1 {
+  #welcome h1 {
     color: #0036FF;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3em;
     line-height: 1.5em;
     margin: 0.5em 0 0.3em; }
-  #content p {
+  #welcome p {
     margin-top: 0;
     line-height: 2em; }
 
 /* Pastor Page */
 #pastor {
   height: 100%;
-  background: url("../img/pastor_background.jpg") no-repeat fixed;
-  background-size: contain; }
+  background: url("../img/pastor_background.jpg") no-repeat fixed; }
 
 /* Location Page */
 #location {
-  background: #f0f; }
+  background: #595959; }
   #location .location-container {
     list-style-type: none;
     padding: 0;
@@ -134,14 +156,13 @@ p {
 /* Footer Page */
 #footer {
   background: #1F1ABD;
-  /* Footer Nav */ }
-  #footer .footer-nav {
-    text-align: center; }
-    #footer .footer-nav li {
-      display: inline-block;
-      margin: 0 15px 0 0; }
-      #footer .footer-nav li a {
-        color: #fff;
-        font-size: 1.1em; }
+  text-align: center; }
+  #footer .icons {
+    padding: 10px 0 0; }
+  #footer p {
+    margin: 0;
+    padding: 4px 2px;
+    font-size: 0.9em;
+    word-spacing: 2px; }
 
 /*# sourceMappingURL=main.css.map */

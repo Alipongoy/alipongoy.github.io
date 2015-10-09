@@ -8,6 +8,36 @@ html
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		title Holy Ground Family Fellowship of America
 	body
+		#header
+			.header-top
+				.header-top-container
+					h1.header-logo HGFFA
+					i.fa.fa-bars
+			ul.header-nav.hidden
+				li
+					a(href="index.html") Home
+				li
+					a(href="events.html") Events
+				li
+					a(href="ministries.html") Ministries
+				li
+					a(href="resources.html") Resources
+				li
+					a(href="media.html") Media
+			block carousel
 		block content
+		#footer
+			.icons
+				span.fa-stack.fa-lg
+					i.fa.fa-circle-thin.fa-stack-2x
+					i.fa.fa-facebook.icon.fa-stack-1x
+
+				span.fa-stack.fa-lg
+					i.fa.fa-circle-thin.fa-stack-2x
+					i.fa.fa-youtube.icon.fa-stack-1x
+
+			p
+				span.hi 2015&copy; 
+				| Holy Ground Family Fellowship of America
 		script(src="http://code.jquery.com/jquery-1.11.3.min.js")
 		script(src="../public/js/main.js")
