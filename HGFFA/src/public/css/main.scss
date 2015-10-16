@@ -69,7 +69,7 @@ $headertop-font-size: 1.9em;
 /* Page Defaults */
 .page {
 	width: 100%;
-	padding: 5px 15px;
+	padding: 20px 15px;
 }
 
 
@@ -102,7 +102,7 @@ $headertop-font-size: 1.9em;
 		font-family: 'Open Sans', sans-serif;
 		padding: 12px;
 	    color: #fff;
-	    background: #000;
+	    background: transparent;
 	    z-index: 1;
 	    position: relative;	
 		}
@@ -113,11 +113,17 @@ $headertop-font-size: 1.9em;
 			position: relative;
 			@include preserve();
 		}
-			
-			/* Header Logo */
-			.header-logo {
+			/* HGFFA Logo */
+			.HGFFA-logo {
 				@include center-nav();
 				left: 4%;
+				width: 50px;
+				-webkit-filter: sepia(100%);
+				filter: saturate(0%);
+			}
+
+			/* Header Logo */
+			.header-logo {
 				display: inline-block;
 				margin: 0;
 				white-space: nowrap;
@@ -185,8 +191,7 @@ $headertop-font-size: 1.9em;
 	h1 {
 		color: #0036FF;
 		font-family: 'Open Sans', sans-serif;
-		font-size: 1.3em;
-		line-height: 1.5em;
+		line-height: 1.8em;
 	}
 
 	p {
@@ -197,7 +202,7 @@ $headertop-font-size: 1.9em;
 
 /* Pastor Page */
 #pastor {
-	background: linear-gradient(hsla(0,0,0,0.5), hsla(0,0,0,0.5)),
+	background: linear-gradient(hsla(0,0,0,0.6), hsla(0,0,0,0.6)),
 				url("../img/pastor_background.jpg") no-repeat center center;
 	background-size: cover;
 	text-align: center;
@@ -260,9 +265,72 @@ $headertop-font-size: 1.9em;
 
 	p {
 		margin: 0;
-		padding: 4px 2px;
+		padding: 4px 2px 10px;
 		font-size: 0.9em;
 		word-spacing: 2px;
+	}
+}
+
+/* Media Queries */
+@media (min-width: 400px) {
+	.header-hero {
+		font-size: 4em;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	p {
+		font-size: 1.1em;
+	}
+}
+
+@media (min-width: 460px) {
+	.header-hero {
+		font-size: 5em;
+	}
+
+	.page {
+		padding: 35px 20px;
+	}
+
+	#location .location-container li i {
+		font-size: 2.3em;
+	}
+}
+
+@media (min-width: 550px) {
+	.header-hero {
+		font-size: 6em;
+	}
+
+	h1 {
+		font-size: 1.6em;
+	}
+
+	p {
+		font-size: 1.4em;
+	}
+	
+	.page {
+		padding: 45px 30px;
+	}
+
+}
+
+@media (min-width: 605px) {
+	
+	.page {
+		padding: 70px 40px;
+	}
+
+}
+
+@media (min-width: 755px) {
+	
+	.page {
+		padding: 100px 60px;
 	}
 
 }
